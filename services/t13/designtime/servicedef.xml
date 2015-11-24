@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="t13" type="DataService" springFile="t13.spring.xml">
+    <dataobjects>
+        <dataobject javaType="com.test_build2_24th.t13.Table2">
+            <element name="id" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="table1" typeRef="com.test_build2_24th.t13.Table1" isList="false" allowNull="false"/>
+        </dataobject>
+        <dataobject javaType="com.test_build2_24th.t13.Table1">
+            <element name="id" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="column2" typeRef="java.lang.Integer" isList="false" allowNull="true"/>
+            <element name="table2s" typeRef="com.test_build2_24th.t13.Table2" isList="true" allowNull="true"/>
+        </dataobject>
+    </dataobjects>
+</service>
